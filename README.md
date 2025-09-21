@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive API provider for personal finance tracking applications that provides real-time and historical data for currencies, stocks, ETFs, and cryptocurrencies using the yfinance library.
+This is part of the Lira project, see https://github.com/fontanamichele/Lira
 
 ## 🌟 Features
 
