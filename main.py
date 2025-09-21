@@ -106,6 +106,11 @@ async def get_exchange_rate(from_currency: str, to_currency: str) -> float:
 async def root():
     return {"message": "Finance Data API", "version": "1.0.0"}
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for monitoring"""
+    return {"status": "healthy", "timestamp": datetime.now().isoformat()}
+
 
 @app.get("/prices/current", response_model=List[PriceData])
 async def get_current_prices(
@@ -262,4 +267,9 @@ async def get_historical_prices(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    import os
+    
+    # Get port from environment variable (for deployment platforms)
+    port = int(os.environ.get("PORT", 8000))
+    
+    uvicorn.run(app, host="0.0.0.0", port=port)

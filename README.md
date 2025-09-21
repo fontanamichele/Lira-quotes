@@ -192,42 +192,48 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## 🚀 Deployment
+## 🚀 Free Deployment Options
 
-### Docker Deployment
+### Railway (Recommended) ⭐
 
-Create a `Dockerfile`:
+1. Go to [railway.app](https://railway.app)
+2. Sign up with GitHub
+3. Click "New Project" → "Deploy from GitHub repo"
+4. Select your repository
+5. Railway auto-deploys! 🎉
 
-```dockerfile
-FROM python:3.11-slim
+**Benefits**: $5 free credit monthly, no cold starts, automatic deployments
 
-WORKDIR /app
+### Render
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+1. Go to [render.com](https://render.com)
+2. Sign up with GitHub
+3. Create "Web Service" from your repo
+4. Deploy automatically
 
-COPY . .
+**Benefits**: 750 free hours/month, custom domains
 
-EXPOSE 8000
+### Fly.io
 
-CMD ["python", "main.py"]
+```bash
+# Install Fly CLI
+curl -L https://fly.io/install.sh | sh
+
+# Deploy
+fly launch
+fly deploy
 ```
 
-Build and run:
+**Benefits**: 3 free VMs, global deployment
+
+### Docker Deployment
 
 ```bash
 docker build -t finance-data-api .
 docker run -p 8000:8000 finance-data-api
 ```
 
-### Cloud Deployment
-
-This API can be deployed on various cloud platforms:
-
-- **Heroku**: Add a `Procfile` with `web: python main.py`
-- **Railway**: Connect your GitHub repository
-- **DigitalOcean App Platform**: Deploy directly from GitHub
-- **AWS/GCP/Azure**: Use container services
+📖 **Detailed deployment guide**: See [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## 📊 API Status
 
