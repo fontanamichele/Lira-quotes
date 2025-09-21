@@ -1,4 +1,4 @@
-app = "finance-data-api"
+app = "lira-quotes"
 primary_region = "iad"
 
 [build]

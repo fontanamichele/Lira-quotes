@@ -1,6 +1,6 @@
 # 🚀 Deployment Guide
 
-This guide covers multiple free hosting options for your Finance Data API.
+This guide covers multiple free hosting options for your Lira quotes API.
 
 ## Option 1: Railway (Recommended) ⭐
 
@@ -17,7 +17,7 @@ Railway offers the best free tier with $5 monthly credit and easy GitHub integra
 
    - Click "New Project"
    - Select "Deploy from GitHub repo"
-   - Choose your `finance-data-api` repository
+   - Choose your `lira-quotes` repository
    - Railway will automatically detect it's a Python app
 
 3. **Configure Environment**:
@@ -59,7 +59,7 @@ Render offers 750 free hours per month with automatic deployments.
 
 3. **Configure Service**:
 
-   - **Name**: `finance-data-api`
+   - **Name**: `lira-quotes`
    - **Environment**: `Python 3`
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `python main.py`

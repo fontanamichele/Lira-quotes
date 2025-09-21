@@ -1,6 +1,6 @@
-# Contributing to Finance Data API
+# Contributing to Lira quotes
 
-Thank you for your interest in contributing to the Finance Data API! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to Lira quotes! This document provides guidelines and information for contributors.
 
 ## How to Contribute
 
@@ -8,7 +8,7 @@ Thank you for your interest in contributing to the Finance Data API! This docume
 
 If you find a bug or have a feature request, please:
 
-1. Check if the issue already exists in the [Issues](https://github.com/yourusername/finance-data-api/issues) section
+1. Check if the issue already exists in the [Issues](https://github.com/fontanamichele/lira-quotes/issues) section
 2. Create a new issue with a clear title and description
 3. Include steps to reproduce the problem (for bugs)
 4. Specify your environment (Python version, OS, etc.)
@@ -36,8 +36,8 @@ If you find a bug or have a feature request, please:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/finance-data-api.git
-cd finance-data-api
+git clone https://github.com/fontanamichele/lira-quotes.git
+cd lira-quotes
 ```
 
 2. Create a virtual environment:

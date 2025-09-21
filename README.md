@@ -1,6 +1,6 @@
-# Finance Data API
+# Lira quotes
 
-[![CI/CD Pipeline](https://github.com/yourusername/finance-data-api/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/yourusername/finance-data-api/actions)
+[![CI/CD Pipeline](https://github.com/fontanamichele/lira-quotes/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/fontanamichele/lira-quotes/actions)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -23,8 +23,8 @@ A comprehensive API provider for personal finance tracking applications that pro
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/finance-data-api.git
-cd finance-data-api
+git clone https://github.com/fontanamichele/lira-quotes.git
+cd lira-quotes
 ```
 
 2. Create a virtual environment (recommended):
@@ -229,8 +229,8 @@ fly deploy
 ### Docker Deployment
 
 ```bash
-docker build -t finance-data-api .
-docker run -p 8000:8000 finance-data-api
+docker build -t lira-quotes .
+docker run -p 8000:8000 lira-quotes
 ```
 
 📖 **Detailed deployment guide**: See [DEPLOYMENT.md](DEPLOYMENT.md)
@@ -264,7 +264,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help, please:
 
-- Open an [issue](https://github.com/yourusername/finance-data-api/issues)
+- Open an [issue](https://github.com/fontanamichele/lira-quotes/issues)
 - Check the [documentation](http://localhost:8000/docs) when running locally
 - Review the [contributing guide](CONTRIBUTING.md)
 

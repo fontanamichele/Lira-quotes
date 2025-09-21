@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
-    title="Finance Data API",
+    title="Lira quotes",
     description="API for real-time and historical financial data including currencies, stocks, ETFs, and cryptocurrencies",
     version="1.0.0"
 )
@@ -104,7 +104,7 @@ async def get_exchange_rate(from_currency: str, to_currency: str) -> float:
 
 @app.get("/")
 async def root():
-    return {"message": "Finance Data API", "version": "1.0.0"}
+    return {"message": "Lira quotes", "version": "1.0.0"}
 
 @app.get("/health")
 async def health_check():
